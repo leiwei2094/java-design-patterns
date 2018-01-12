@@ -11,6 +11,7 @@
         <module>intercepting-filter</module>
         <module>decorator</module>
         <module>chain</module>
+        <module>chain-filter</module>
     </modules>
 
     <packaging>pom</packaging>
