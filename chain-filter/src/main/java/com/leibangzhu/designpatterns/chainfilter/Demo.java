@@ -12,6 +12,7 @@ public class Demo {
         List<Filter> filters = new ArrayList<>();
         filters.add(new FooFilter());
         filters.add(new BarFilter());
+        filters.add(new BazFilter());
 
         handler = buildHandlerChain(handler,filters);
         handler.handle(new Request("hello"));
