@@ -1,5 +1,12 @@
 package com.leibangzhu.designpatterns.chainfilter;
 
+import com.leibangzhu.designpatterns.chainfilter.filter.BarFilter;
+import com.leibangzhu.designpatterns.chainfilter.filter.BazFilter;
+import com.leibangzhu.designpatterns.chainfilter.filter.Filter;
+import com.leibangzhu.designpatterns.chainfilter.filter.FooFilter;
+import com.leibangzhu.designpatterns.chainfilter.handler.DefaultHandler;
+import com.leibangzhu.designpatterns.chainfilter.handler.Handler;
+
 import java.util.ArrayList;
 import java.util.List;
 

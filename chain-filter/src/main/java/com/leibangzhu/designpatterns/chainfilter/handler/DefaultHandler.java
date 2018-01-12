@@ -1,6 +1,9 @@
-package com.leibangzhu.designpatterns.chainfilter;
+package com.leibangzhu.designpatterns.chainfilter.handler;
 
-public class DefaultHandler implements Handler{
+import com.leibangzhu.designpatterns.chainfilter.Request;
+import com.leibangzhu.designpatterns.chainfilter.Result;
+
+public class DefaultHandler implements Handler {
     @Override
     public Result handle(Request request) {
         Result result = new Result("Default" + request.getValue());
