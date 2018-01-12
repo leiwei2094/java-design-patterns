@@ -3,6 +3,8 @@ package com.leibangzhu.designpatterns.chainfilter;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.leibangzhu.designpatterns.chainfilter.ChainBuilder.buildHandlerChain;
+
 public class Demo {
     public static void main(String[] args) {
         Handler handler = new DefaultHandler();
@@ -13,16 +15,5 @@ public class Demo {
 
         handler = buildHandlerChain(handler,filters);
         handler.handle(new Request("hello"));
-    }
-
-    private static Handler buildHandlerChain(Handler handler,List<Filter> filters){
-        Handler last = handler;
-        for (int i = filters.size() - 1; i >= 0; i --){
-            Filter filter = filters.get(i);
-            Handler next = last;
-
-            last = request -> filter.handle(next,request);
-        }
-        return last;
     }
 }
