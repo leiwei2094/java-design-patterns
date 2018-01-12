@@ -1,4 +1,4 @@
-package com.leibangzhu.designpatterns.decorator;
+package com.leibangzhu.designpatterns.decorator.old;
 
 // 6. Optional embellishment
 public class BorderDecorator extends Decorator {

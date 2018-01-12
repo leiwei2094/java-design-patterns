@@ -1,4 +1,4 @@
-package com.leibangzhu.designpatterns.decorator;
+package com.leibangzhu.designpatterns.decorator.old;
 
 public class DecoratorDemo {
     public static void main(String[] args) {

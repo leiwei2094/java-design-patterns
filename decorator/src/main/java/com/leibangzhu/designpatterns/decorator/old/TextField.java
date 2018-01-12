@@ -1,4 +1,4 @@
-package com.leibangzhu.designpatterns.decorator;
+package com.leibangzhu.designpatterns.decorator.old;
 
 // 3. "Core" class with "is a" relationship
 public class TextField implements Widget {
